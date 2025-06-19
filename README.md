@@ -57,6 +57,7 @@ AIOStreams integrates results from, and has automated configuration for, the fol
 - Torbox Addon
 - Debridio
 - Jackettio / Stremio-Jackett
+- Prowlarr
 - Peerflix
 - DMM Cast
 - Orion Stremio Addon
@@ -81,6 +82,7 @@ There are several ways to use AIOStreams:
 2. 🛠️ **Self-Hosting / Paid Hosting:**
    - Host AIOStreams yourself using methods like Docker, Cloudflare Workers, or directly from the source.
    - Use a paid hosting provider like [ElfHosted](https://store.elfhosted.com/product/aiostreams/elf/viren070/) (using this link supports the project!) or Heroku.
+   - To enable the new **Prowlarr** addon, set `PROWLARR_URL` in your `.env` file to the address of your instance and supply the API key when configuring the addon. Streams from Prowlarr will be passed to Torbox or any other enabled debrid service for downloading.
 
 > [!NOTE]
 > A [private ElfHosted instance](https://store.elfhosted.com/product/aiostreams/elf/viren070/) will support all addons, including Torrentio, avoid ratelimits of all ElfHosted addons, and also have no rate limit of its own.

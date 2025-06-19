@@ -16,6 +16,7 @@ import { PeerflixPreset } from './peerflix';
 import { DMMCastPreset } from './dmmCast';
 import { MarvelPreset } from './marvel';
 import { JackettioPreset } from './jackettio';
+import { ProwlarrPreset } from './prowlarr';
 import { OrionPreset } from './orion';
 import { StreamFusionPreset } from './streamfusion';
 import { AnimeKitsuPreset } from './animeKitsu';
@@ -43,6 +44,7 @@ const PRESET_LIST: string[] = [
   'stremthruStore',
   'torbox',
   'jackettio',
+  'prowlarr',
   'peerflix',
   'easynews',
   'easynewsPlus',
@@ -106,6 +108,8 @@ export class PresetManager {
         return TorboxAddonPreset;
       case 'jackettio':
         return JackettioPreset;
+      case 'prowlarr':
+        return ProwlarrPreset;
       case 'easynews':
         return EasynewsPreset;
       case 'easynewsPlus':

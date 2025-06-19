@@ -676,6 +676,41 @@ export const Env = cleanEnv(process.env, {
     desc: 'Default Jackettio user agent',
   }),
 
+  // Prowlarr settings
+  PROWLARR_URL: url({
+    default: 'https://prowlarr.elfhosted.com',
+    desc: 'Prowlarr URL',
+  }),
+  DEFAULT_PROWLARR_INDEXERS: json({
+    default: ['eztv', 'thepiratebay', 'therarbg', 'yts'],
+    desc: 'Default Prowlarr indexers',
+  }),
+  DEFAULT_PROWLARR_STREMTHRU_URL: url({
+    default: 'https://stremthru.13377001.xyz',
+    desc: 'Default Prowlarr StremThru URL',
+  }),
+  DEFAULT_PROWLARR_TIMEOUT: num({
+    default: undefined,
+    desc: 'Default Prowlarr timeout',
+  }),
+  FORCE_PROWLARR_HOSTNAME: host({
+    default: undefined,
+    desc: 'Force Prowlarr hostname',
+  }),
+  FORCE_PROWLARR_PORT: forcedPort({
+    default: undefined,
+    desc: 'Force Prowlarr port',
+  }),
+  FORCE_PROWLARR_PROTOCOL: str({
+    default: undefined,
+    desc: 'Force Prowlarr protocol',
+    choices: ['http', 'https'],
+  }),
+  DEFAULT_PROWLARR_USER_AGENT: userAgent({
+    default: undefined,
+    desc: 'Default Prowlarr user agent',
+  }),
+
   // Torrentio settings
   TORRENTIO_URL: url({
     default: 'https://torrentio.strem.fun',
