@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.0.2](https://github.com/Viren070/AIOStreams/compare/v2.0.1...v2.0.2) (2025-06-19)
+
+
+### Bug Fixes
+
+* add enableCollectionFromMovie option to TMDB Collections ([71d9fe0](https://github.com/Viren070/AIOStreams/commit/71d9fe093cad1566172206d0a87662358bd446a6)), closes [#194](https://github.com/Viren070/AIOStreams/issues/194)
+* add stream as supported resource for TMDB Collections ([d2ef215](https://github.com/Viren070/AIOStreams/commit/d2ef2154fda902900751c47527ff52390506bd54))
+
 ## [2.0.1](https://github.com/Viren070/AIOStreams/compare/v2.0.0...v2.0.1) (2025-06-19)
 
 
